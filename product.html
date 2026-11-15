@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product | Leumue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Leumue</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="detail" id="product-box">
+      <div>
+        <img class="photo big" id="p-photo" alt="">
+      </div>
+      <div>
+        <h2 id="p-name"></h2>
+        <p class="price" id="p-price"></p>
+        <p id="p-desc"></p>
+        <p>Material: <span id="p-material"></span></p>
+        <p>Delivery: 3 to 5 working days</p>
+        <p>Quantity: <input type="number" id="quantity" value="1" min="1"></p>
+        <button onclick="addButton()">Add to cart</button>
+        <button class="light" onclick="buyNow()">Buy now</button>
+        <p id="message"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Leumue Jewellery. Student project for DCS3003.</footer>
+
+  <script src="script.js"></script>
+  <script>showProduct();</script>
+</body>
+</html>

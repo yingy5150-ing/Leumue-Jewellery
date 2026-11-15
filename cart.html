@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart | Leumue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Leumue</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Your cart</h2>
+    <div id="cart-box">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Price</th><th>Quantity</th><th>Subtotal</th><th></th></tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+        </table>
+      </div>
+      <p class="total">Total: <span id="cart-total"></span></p>
+      <a class="btn" href="checkout.html">Check out</a>
+      <a class="btn light" href="shop.html">Keep shopping</a>
+    </div>
+  </main>
+
+  <footer>© 2026 Leumue Jewellery. Student project for DCS3003.</footer>
+
+  <script src="script.js"></script>
+  <script>showCart();</script>
+</body>
+</html>

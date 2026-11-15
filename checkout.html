@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Leumue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Leumue</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="checkout-box">
+      <h2>Check out</h2>
+      <h3>Order summary</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Quantity</th><th>Subtotal</th></tr>
+          </thead>
+          <tbody id="summary-body"></tbody>
+        </table>
+      </div>
+      <p class="total">Total: <span id="summary-total"></span></p>
+
+      <h3>Delivery details</h3>
+      <form onsubmit="return placeOrder();">
+        <input type="text" id="name" placeholder="Full name" required>
+        <input type="tel" id="phone" placeholder="Phone number" required>
+        <textarea id="address" rows="3" placeholder="Delivery address" required></textarea>
+        <button type="submit">Place order</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>© 2026 Leumue Jewellery. Student project for DCS3003.</footer>
+
+  <script src="script.js"></script>
+  <script>showSummary();</script>
+</body>
+</html>
